@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'IvanCurkovic';
-  src: url('IvanCurkovic.ttf') format('truetype');
+  src: url('fontovi/MarijaBuljanovic.ttf') format('truetype');
 }
 
 body {
@@ -13,9 +13,8 @@ body {
   text-align: center;
 }
 
-
 .naslov-pocetna {
-  font-family: 'IvanCurkovic', sans-serif;
+  font-family: 'IvanCurkovic', sans-serif; /* Ažurirano ime */
   font-size: 70px;
   margin: 40px 0 10px;
   color: white;
@@ -26,7 +25,11 @@ h2 {
   margin: 0 0 30px;
 }
 
-
+nav {
+  /* Umjesto opacity, koristimo rgba da tekst ostane jasno vidljiv */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("sir.jpg") no-repeat center center/cover;
+  padding: 15px 0;
+}
 
 nav ul {
   list-style: none;
@@ -63,7 +66,6 @@ nav a:hover {
   line-height: 1.6;
 }
 
-
 .okvir-vjezbe {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
@@ -76,9 +78,10 @@ nav a:hover {
   gap: 20px;
 }
 
-.okvir-vjezbe img,
-.okvir-vjezbe video,
-.slike-centar img,
+/* Grupirani selektori za slike i video materijale */
+.okvir-vjezbe img, 
+.okvir-vjezbe video, 
+.slike-centar img, 
 .slike-centar video {
   width: 30%;
   max-width: 300px;
@@ -93,10 +96,4 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-img[src*="8.jpg"] {
-  width: 30%;
-  max-width: 300px;
-  height: auto;
 }
