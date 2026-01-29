@@ -1,7 +1,6 @@
-
 @font-face {
   font-family: 'IvanCurkovic';
-  src: url('fontovi/IvanCurkovic.ttf') format('truetype');
+  src: url('IvanCurkovic.ttf') format('truetype');
 }
 
 body {
@@ -27,11 +26,7 @@ h2 {
   margin: 0 0 30px;
 }
 
-nav {
-  background: url("sir.jpg") no-repeat center center/cover;
-  opacity: 0.5;
-  padding: 15px 0;
-}
+
 
 nav ul {
   list-style: none;
@@ -104,3 +99,4 @@ img[src*="8.jpg"] {
   width: 30%;
   max-width: 300px;
   height: auto;
+}
